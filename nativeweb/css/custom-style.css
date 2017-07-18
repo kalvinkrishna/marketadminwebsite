@@ -1,0 +1,90 @@
+.header-brand{
+	z-index: 90;
+}
+.header-brand,.nav-container{
+	background-color: black;
+}
+.header-brand .brand-one{
+	color: white;	
+}
+.header-brand .brand-two{
+	color: blue;
+}
+.brand-one,.brand-two{
+	font-weight: 600;
+	letter-spacing: 2px;
+}
+
+.searchbox{
+	margin-top: 20px;
+	margin-bottom: 10px;
+	margin-right: 15px;
+}
+
+
+/*Navigasi*/
+.nav-container{
+	position: fixed;
+	height: 100%;
+	z-index: 80;
+}
+.nav-container .wrap{
+	top: 80px !important;
+	position: relative;
+}
+.navbar-toggle{
+		margin: 0px;
+}
+.icon-bar{
+	background-color: grey;
+}
+
+.nav-menu{
+	margin-left:118px;
+	position: absolute;
+	top: -5px;
+	display: none;
+}
+.wrap:hover .nav-menu{
+	display: block;
+}
+.nav-menu ul{
+	width: 100px;
+	background-color: #cccccc;
+}
+.nav-menu .menu .submenu{
+	position: absolute;
+    top: 23px;
+    margin-left: 92px;
+}
+.nav-menu ul li{
+	padding: 20px 15px 15px 10px;
+	line-height: 20px;
+	position: relative;
+}
+.nav-menu ul li .icon{
+	float: right;
+}
+
+
+@media screen and (max-width: 767px){
+	.nav-container{
+		position: relative;
+	}
+	.nav-container .wrap{
+		top: 0px !important;
+	}
+	.header-brand{
+		padding:10px;
+	}
+	.title{
+		text-align: center;
+	}
+}
+@media (min-width: 1024px){
+	.nav-container .navbar-toggle{
+		display: block !important;
+		float: none;
+		margin: auto;
+	}
+}
